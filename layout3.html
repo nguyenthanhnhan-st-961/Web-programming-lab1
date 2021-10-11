@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập layout 2</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma;
+            font-size: 13px;
+        }
+        
+        #container {
+            border: 1px solid black;
+            width: 1200px;
+            margin: auto;
+        }
+
+        #container #header {
+            border: 1px solid black;
+            height: 100px;
+        }
+
+        #container #nav {
+            border: 1px solid black;
+            height: 50px;
+        }
+
+        #container #contain {
+            border: 1px solid black;
+            overflow: auto;
+        }
+
+        #container #contain #left {
+            border: 1px solid black;
+            width: 25%;
+            float: left;
+        }
+
+        #container #contain #right {
+            border: 1px solid black;
+            width: 75%;
+            clear: right;
+        }
+
+        #container #footer {
+            border: 1px solid black;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <section id="header">
+    <p>Header</p>
+    </section>
+    <nav id="nav">
+        <p>Nav bar</p>
+    </nav>
+    <section id="contain">
+        <div id="left">
+            <p>Left contain</p>
+            <p>Left contain</p>
+            <p>Left contain</p>
+            <p>Left contain</p>
+            <p>Left contain</p>
+        </div>
+
+        <div id="right">
+            <p>Right contain</p>
+            <p>Right contain</p>
+            <p>Right contain</p>
+            <p>Right contain</p>
+            <p>Right contain</p>
+        </div>
+    </section>
+    <section id="footer">
+        <p>Footer</p>
+    </section>
+</div>
+</body>
+</html>
