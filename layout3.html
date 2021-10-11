@@ -2,82 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài tập layout 2</title>
+    <title>Bài tập layout 3</title>
     <style>
 
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Tahoma;
-            font-size: 13px;
+            margin: 10px;
+            font-family: Tahoma, serif;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+
         }
-        
+
         #container {
-            border: 1px solid black;
-            width: 1200px;
+            width: 900px;
             margin: auto;
         }
 
         #container #header {
-            border: 1px solid black;
-            height: 100px;
+            border: 2px solid black;
+            background: darkgoldenrod;
+            height: 120px;
+            margin: 10px 0px;
         }
 
-        #container #nav {
-            border: 1px solid black;
-            height: 50px;
+        #container #sec {
+            border: 2px solid black;
+            background: darkgray;
+            height: 400px;
+            margin: 10px 0px;
         }
 
         #container #contain {
-            border: 1px solid black;
             overflow: auto;
+            margin: auto;
         }
 
-        #container #contain #left {
-            border: 1px solid black;
-            width: 25%;
+        #container #contain #services-list {
+            width: 100%;
+            min-height: 250px;
+            margin: auto;
+        }
+
+        #container #contain #services-list .service-item {
+            border: 2px solid black;
+            width: 180px;
+            height: 220px;
+            background: darkgray;
             float: left;
-        }
-
-        #container #contain #right {
-            border: 1px solid black;
-            width: 75%;
             clear: right;
+            margin: 50px 50px 10px 50px;
         }
 
         #container #footer {
-            border: 1px solid black;
-            height: 100px;
+            border: 2px solid black;
+            background: cornflowerblue;
+            height: 120px;
+            margin: 10px 0px;
         }
     </style>
 </head>
 <body>
 <div id="container">
     <section id="header">
-    <p>Header</p>
+        <p>Header Section</p>
     </section>
-    <nav id="nav">
-        <p>Nav bar</p>
-    </nav>
+    <section id="sec">
+        <p>Company Image</p>
+    </section>
     <section id="contain">
-        <div id="left">
-            <p>Left contain</p>
-            <p>Left contain</p>
-            <p>Left contain</p>
-            <p>Left contain</p>
-            <p>Left contain</p>
-        </div>
-
-        <div id="right">
-            <p>Right contain</p>
-            <p>Right contain</p>
-            <p>Right contain</p>
-            <p>Right contain</p>
-            <p>Right contain</p>
+        <div id="services-list">
+            <div class="service-item">service 1</div>
+            <div class="service-item">service 2</div>
+            <div class="service-item">service 3</div>
+            <div class="service-item">service 4</div>
+            <div class="service-item">service 5</div>
+            <div class="service-item">service 6</div>
         </div>
     </section>
     <section id="footer">
-        <p>Footer</p>
+        <p>Footer section</p>
     </section>
 </div>
 </body>
