@@ -2,9 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài tập layout 2</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Tahoma, Serif;
+            font-size: 20px;
+
+        }
+
+        #container {
+            width: 1200px;
+            margin: auto;
+            text-align : center;
+        }
+
+        #container #header {
+            border: 1px solid black;
+            height: 80px;
+        }
+
+        #container #nav {
+            border: 1px solid black;
+            height: 50px;
+        }
+
+        #container #contain {
+            width: 100%;
+            overflow: auto;
+        }
+
+        #container #contain #index {
+            border: 1px solid black;
+            height: 200px;
+            width: 198px;
+            float: left;
+            clear: right;
+
+        }
+
+        #container #contain #content {
+            border: 1px solid black;
+            height: 200px;
+            width: 998px;
+            float: right;
+            clear: none;
+        }
+
+        #container #footer {
+            border: 1px solid black;
+            height: 100px;
+            float: bottom;
+        }
+    </style>
 </head>
 <body>
+<div id="container">
+    <section id="header">
+        <p>
+            <b>Header section</b>
+        </p>
+    </section>
 
+    <nav id="nav">
+        <p>
+           <b> Navigation bar</b>
+        </p>
+    </nav>
+
+    <section id="contain">
+
+        <div id="index">
+            <p>
+                <b>Index</b>
+            </p>
+        </div>
+
+        <div id="content">
+            <p>
+                <b>Content section</b>
+            </p>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <p>
+            <b>Footer section</b>
+        </p>
+    </section>
+</div>
 </body>
 </html>
