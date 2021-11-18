@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <script src="./bai1.js"></script>
+    <style>
+        body{
+            align-items: center;
+           
+            
+        }
+    .content{
+             width: 100%;
+             height: 600px;
+             text-align: center;
+        }
+  .but{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+     margin-left: 100px;
+     
+  }
+  
+    </style>
+</head>
+<body>
+    <div class="content" id="content">
+      <p style="color: blue;"></p>
+        
+       <input type="button" style="background-color: aqua;" value="" class="but">
+       <input type="button" style="background-color: black;" value="" class="but">
+       <input type="button" style="background-color: red;" value="" class="but">
+       <input type="button" style="background-color: yellow" value="" class="but">
+       <input type="button" style="background-color: green;" value="" class="but">
+       <input type="button" style="background-color: blue;" value="" class="but">
+    </div>
+    
+</body>
+<script>
+
+let nut = document.querySelectorAll('.content input')
+
+var arr =['aqua','black','red','yellow','green','blue']
+console.log(arr)
+    var content = document.getElementById('content')
+    
+    function abc (){
+        
+        for (let index = 0; index < arr.length; index++) {
+            nut[index].addEventListener('click',function(){
+               content.style.backgroundColor = arr[index]
+            })
+            
+        }
+    }
+   abc();
+   
+
+</script>
+</html>

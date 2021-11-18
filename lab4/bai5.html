@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .app {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrap-img {
+        width: 40%;
+        height: 50%;
+        transition: all ease-in 0.2s;
+    }
+    
+    .wrap-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+</style>
+
+<body>
+    <div class="app">
+        <div class="wrap-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiZWzLMOjuunqkx2-8Zh5_rDiMfWibbtzbVg&usqp=CAU">
+        </div>
+    </div>
+    <script>
+        const wrap_img = document.querySelector('.wrap-img');
+        let rotate = 1;
+        setInterval(function() {
+            wrap_img.style = `transform: rotate(calc(15deg * ${rotate}))`;
+            rotate++;
+        }, 2000);
+    </script>
+</body>
+
+</html>

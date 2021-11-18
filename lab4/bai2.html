@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <style>
+        .form{
+            width: 1200px;
+            height: 100%;
+            margin:0 auto;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <form name="PT Bặc 2" class="form">
+        <h2>Phương trình bậc 2: ax<sup>2</sup> + bx +c = 0</h2>
+     <input type="text" name="A" id="A" placeholder="nhập a"> <br>
+     <input type="text" name="B" id="B" placeholder="nhập b"> <br>
+     <input type="text" name="C" id="C" placeholder="nhập c"> <br>
+    <input type="button" value="Kết quả" id="btn">
+    <h2 id="out"> Kết quả :</h2>
+    </form>
+    
+</body>
+<script>
+   var btn = document.getElementById('btn');
+   var out = document.getElementById('out');
+   console.log(out.value)
+    btn.addEventListener('click',function(){
+        var a = document.getElementById('A').value;
+        var b = document.getElementById('B').value;
+        var c = document.getElementById('C').value;
+        
+        var delta = b*b - 4*a*c
+        let text;
+        if(delta <0){
+            text = "phương trình vô nghiệm";
+
+        }else  if(delta <0){
+            text = "phương trình có nghiệm kép "+ -b/2*a ;
+        
+        }else {
+            text = "phương trình có 2 nghiệm Phân biệt x1 ="  +(-b+Math.sqrt(delta)) /2*a +" x2 = "+(-b-Math.sqrt(delta))
+        }
+        
+        document.getElementById("out").innerHTML = text;
+    })
+
+    
+</script>
+</html>

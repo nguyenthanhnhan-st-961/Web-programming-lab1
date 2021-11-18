@@ -1,0 +1,90 @@
+body {
+    font-family: Tahoma;
+
+}
+
+.container {
+    border-radius: 10px;
+    border: 10px solid #7f7f7f;
+    background: white;
+    padding: 50px 30px;
+    width: 50%;
+    margin: 0 25%;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.input {
+    border: 1px solid #7f7f7f;
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #f2f2f2;
+}
+
+.input .input {
+    background: #f2f2f2;
+    border: none;
+    margin: 5px 0;
+    padding: 0;
+}
+.input .input:focus {
+    border: none;
+}
+.message {
+    border: 1px solid #7f7f7f;
+    width: 100%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: white;
+}
+.message .input {
+    border: none;
+    background: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+.email{
+    width: 49%;
+    float: left;
+    display: inline;
+}
+.phone{
+    width: 49%;
+    float: right;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.bnt-submit {
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.bnt-submit:hover {
+    background-color: #7f7f7f;
+}
+

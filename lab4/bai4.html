@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .app {
+        height: auto;
+    }
+    
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .textarea {
+        width: 40%;
+        height: 200px;
+        border: none;
+        outline: none;
+        background-color: #dbdbdb;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        resize: none;
+    }
+    
+    .text {
+        border: none;
+        outline: none;
+        background-color: #d8d7d7;
+        border-radius: 5px;
+        width: 40%;
+        padding: 12px 0;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        border: none;
+        outline: none;
+        background-color: rgb(22, 150, 150);
+        color: bisque;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 12px 10px;
+        cursor: pointer;
+    }
+    
+    .result {
+        font-size: 18px;
+        margin-top: 20px;
+        width: 40%;
+        background-color: #bbbbbb;
+        color: red;
+        border-radius: 5px;
+        padding: 12px;
+        pointer-events: none;
+        user-select: none;
+    }
+</style>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <textarea name="" id="" cols="30" rows="10" class="textarea">
+
+            </textarea>
+            <input class="text" type="text">
+            <button class="btn">Check</button>
+            <p class="result">Kết quả</p>
+        </div>
+    </div>
+    <script>
+        const area = document.querySelector('.textarea');
+        const text = document.querySelector('.text');
+        const btn = document.querySelector('.btn');
+        const result = document.querySelector('.result');
+
+        btn.onclick = function(e) {
+            let para = area.value;
+            let line = text.value;
+            let arr = para.trim().split(line.trim());
+            result.innerHTML = `Đoạn văn chứa ${arr.length - 1} từ trong text`;
+        }
+    </script>
+</body>
+
+</html> 

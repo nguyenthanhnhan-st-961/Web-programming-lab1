@@ -1,0 +1,440 @@
+html, body {
+    width: 100%;
+    font-size: 13px;
+    font-family: Helvatica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#page .container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#page #section_text_2 {
+    background: #f3f3f3;
+    width: 100%;
+    height: 100px;
+}
+
+#page #section_text_2 .alpha {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#page #section_text_2 .alpha .logo {
+    /*width: 165px;*/
+    /*margin-left: 30%;*/
+}
+
+#page #section_text_2 .omega {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-top: 35px;
+}
+
+#page #section_text_2 .omega .pix_button {
+    border-radius: 3px;
+    background: #f77825;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    /*margin-right: 30%;*/
+}
+
+#page #section_text_2 .omega .pix_button:hover {
+    background: #7f7f90;
+}
+
+#page #section_header_1 {
+    height: 90px;
+    background: #ffffff;
+}
+
+#page #section_header_1 .navbar-collapse {
+    width: 70%;
+    float: left;
+    padding: 2% 0;
+}
+
+#page #section_header_1 .navbar-collapse ul li {
+    list-style-type: none;
+    float: left;
+    padding: 0 30px 0 0;
+    font-weight: bold;
+}
+
+#page #section_header_1 .navbar-collapse ul li a {
+    text-decoration: none;
+    color: #7f7f90;
+}
+
+#page #section_header_1 .navbar-collapse ul li:hover a {
+    color: #f77825;
+}
+
+#page #section_header_1 .right_socials {
+    width: 30%;
+    float: right;
+    min-width: 150px;
+    padding: 2% 0;
+}
+
+#page #section_header_1 .right_socials ul {
+}
+
+#page #section_header_1 .right_socials ul li {
+    list-style-type: none;
+    float: left;
+    padding: 0 0 0 20px;
+    font-size: 150%;
+}
+
+#page #section_header_1 .right_socials ul li a {
+    color: #7f7f7f;
+    text-decoration: none;
+}
+
+#page #section_slider {
+    background: #eeeeee;
+    padding: 100px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+#page #section_slider #myCarousel a {
+    font-size: 300%;
+    text-decoration: none;
+    color: white;
+    background: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin: 0 100px;
+    position: absolute;
+}
+
+#page #section_slider #myCarousel .left {
+    float: left;
+    top: 80%;
+    left: 40px;
+}
+
+#page #section_slider #myCarousel .right {
+    float: right;
+    top: 80%;
+    right: 40px;
+}
+
+#page #section_slider #myCarousel ol {
+    float: left;
+    list-style-type: none;
+    display: none;
+
+}
+
+#page #section_slider #myCarousel ol li {
+    float: left;
+    margin: 0 10px;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #2dc0e8;
+}
+
+#page #section_slider #myCarousel ol li:hover {
+    background: #2dc0e8;
+}
+
+#page #section_slider .carousel-inner {
+    background: white;
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+#page #section_slider .carousel-inner .carousel-caption {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    color: white;
+    text-align: left;
+    margin: 0 20px;
+}
+
+#page #section_slider .carousel-inner .carousel-caption h3 {
+    font-size: 200%;
+    margin: 10px 0;
+}
+
+#page #section_slider .carousel-inner .item {
+    width: 1000px;
+    height: 100%;
+}
+#page #section_slider .item .img {
+    width: 1000px;
+}
+
+#page #section_gym_4 {
+    padding: 60px 0 20px 13%;
+    background: white;
+    overflow: auto;
+}
+
+#page #section_gym_4 .container {
+    width: 1000px;
+}
+
+#page #section_gym_4 .column {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#page #section_gym_4 .column .logo_style {
+    border-radius: 50%;
+}
+
+#page #section_gym_4 .column .pix_text {
+    border-radius: 3px;
+    background: #ff8833;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#page #section_gym_4 .column .gym_st {
+    font-size: 150%;
+    color: black;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#page #section_gym_4 .column .part_st {
+    text-align: center;
+}
+
+#page #section_gym_4 .column .gym_text {
+    color: #b1a9a9;
+    margin: 0 0 20px 0;
+}
+
+#page #section_intro_title {
+    background: #f3f3f3;
+    padding: 1% 0 5% 10%;
+
+}
+
+#page #section_intro_title .container {
+    width: 1000px
+}
+
+#page #section_intro_title .column {
+    width: 20%;
+    float: left;
+    text-align: center;
+    border-radius: 4px;
+    border: 4px solid #dddddd;
+    padding: 30px 25px;
+    margin: 0 10px;
+    background: white;
+}
+
+#page #section_intro_title .column .big_title {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+#page #section_intro_title .column .blue_text {
+    color: #2dc0e8;
+}
+
+#page #section_intro_title .column .orange {
+    color: #f77825;
+}
+
+#page #section_intro_title .column .light_gray {
+    color: #999999;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+#page #section_intro_title .column .flat_pricing_list .pix_text {
+    color: #999999;
+    margin: 25px 0;
+}
+
+#page #section_intro_title .column .pix_text {
+    list-style-type: none;
+    text-align: center;
+}
+
+#page #section_intro_title .column .pix_button {
+    border-radius: 2px;
+    border: 0 solid black;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#page #section_intro_title .column .blue_bg {
+    background: #2dc0e8;
+}
+
+#page #section_intro_title .column .orange_bg {
+    background: #f77825;
+}
+
+#page #section_party_3 {
+    text-align: center;
+    padding: 80px 0;
+    background: #191919;
+}
+
+#page #section_party_3 .text_input {
+    width: 30%;
+    border-radius: 3px;
+    border: 3px solid #292929;
+    padding: 20px;
+    background: #151515;
+    margin: auto;
+    overflow: auto;
+}
+
+#page #section_party_3 .text_input .pix_text {
+    font-size: 200%;
+    color: white;
+    margin: 30px auto;
+}
+
+#page #section_party_3 .text_input .segment {
+    border: 2px solid;
+    background: #1c8ff5;
+    width: 90px;
+    height: 8px;
+    margin: 30px auto;
+}
+
+#page #section_party_3 .text_input .subtext_style {
+    color: #808080;
+    margin: 30px auto;
+    font-size: 120%;
+}
+
+#page #section_party_3 .text_input .contact_st {
+    width: 33%;
+    text-align: left;
+    /*margin: 0 auto;*/
+}
+
+#page #section_party_3 .text_input .contact_st #contact_form {
+    margin-left: 0;
+}
+
+#page #section_party_3 .text_input .contact_st #contact_form input {
+    margin: 10px auto;
+    height: 50px;
+    width: 350px;
+    font-size: 120%;
+    color: black;
+}
+
+#page #section_party_3 .text_input .contact_st #contact_form button {
+    margin: 10px auto;
+    height: 50px;
+    width: 360px;
+    background: #1d66de;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#page #section_party_4 {
+    background: #151515;
+    padding: 30px 0 10px 0;
+}
+
+#page #section_party_4 .container {
+    margin: auto;
+}
+
+#page #section_party_4 .pix_text {
+    color: #a9a9a9;
+}
+
+#page #section_party_4 .alpha {
+    width: 50%;
+    float: left;
+    margin-left: 0;
+}
+
+#page #section_party_4 .alpha .pix_text .rights_st {
+    margin-left: 30%;
+}
+
+#page #section_party_4 .alpha .pix_text .pixfort_st {
+    font-weight: bold;
+    color: #1c8ff5;
+}
+
+#page #section_party_4 .omega {
+    width: 50%;
+    float: right;
+    /*margin: auto;*/
+}
+
+#page #section_party_4 .omega .socbuttons {
+    margin-left: 20%;
+}
+
+#page #section_party_4 .omega .socbuttons .pix_text {
+    margin: 0 20px 0 20px;
+    float: left;
+}
+
+#page #section_party_4 .omega .socbuttons .pix_text .rights_st {
+    /*margin: auto;*/
+}
+
+#page #section_party_4 .omega .soc_icons ul {
+    margin: 0;
+    padding: 0;
+}
+
+#page #section_party_4 .omega .soc_icons ul li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 10px;
+
+}
+
+#page #section_party_4 .omega .soc_icons ul li a {
+    text-decoration: none;
+    font-size: 150%;
+    color: #7f7f7f;
+}
